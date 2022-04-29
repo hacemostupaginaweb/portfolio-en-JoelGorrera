@@ -1,0 +1,69 @@
+#visor
+{
+    width: 400px;
+    height: 400px;
+    background-color: silver;
+    overflow: hidden;
+    position: absolute;
+    border: solid cadetblue 2px;
+}
+#playa
+{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+}
+#pez
+{
+    position: absolute;
+    top: 137px;
+    left: 137px;
+    width: 120px;
+}
+
+
+article h2{ margin-left: 121px;}
+
+@keyframes playa {
+    from { left: 0px; }
+    
+    to { left: -600px; }
+}
+    
+@-moz-keyframes playa {
+    from { left: 0px; }
+    
+    to { left: -600px; }
+}
+    
+@-webkit-keyframes playa {
+    from { left: 0px; }
+    
+    to { left: 600px; }
+}
+
+#playa
+{
+    animation-name: playa ;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear ;
+    -moz-animation-name: playa ;
+    -moz-animation-duration: 5s ;
+    -moz-animation-iteration-count: infinite ;
+    -moz-animation-timing-function: linear ;
+    -webkit-animation-name: playa ;
+    -webkit-animation-duration: 5s ;
+    -webkit-animation-iteration-count: infinite ;
+    -webkit-animation-timing-function : linear;
+}
+
+p.buttons 
+{
+    margin-top: 450px;
+    padding-left: 27px;
+}
+
+.buttons input{padding:10px; border-radius: 10px; background-color: cadetblue; font-size: 14px; font-weight: bold;}
+
+.buttons select {padding:9px; border-radius: 10px; background-color: cadetblue; font-size: 13px; font-weight: bold;}

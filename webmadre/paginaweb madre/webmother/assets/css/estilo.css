@@ -1,0 +1,463 @@
+.animation-cloud {
+	position: absolute;
+	background: url(../images/nube.png);
+	height: 145px;
+	width: 329px;
+}
+
+body {
+	background-color: #72c8f9;
+	background-image: url(../images/sol.png);
+	background-repeat: no-repeat;
+	background-position: left:0px;
+
+}
+
+.container-toalla {
+	background: url(../images/sol.png) no-repeat top 100px;
+}
+
+header span {
+	font-family: 'Lobster Two', cursive;
+	color: white;
+	font-size: 45px;
+	letter-spacing: 2px;
+	display: block;
+	text-align: center;
+}
+
+header {
+	padding: 100px;
+	background: url(../images/cabeza.png) no-repeat center 240px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: grey;
+	position: absolute;
+	left: 0px;
+	top: 317px;
+
+}
+
+
+
+header h1 {
+	color: white;
+	font-family: 'Lobster Two', cursive;
+	font-size: 70px;
+	text-align: center;
+
+}
+
+
+h1 {
+	color: #12e065;
+	font-family: 'Lobster Two', cursive;
+	font-weight: 400;
+	font-size: 80px;
+}
+
+p {
+
+	font-family: 'Lato';
+	font-size: 24px;
+}
+
+.quien-soy img {
+	float: left;
+	width: 38%;
+	padding-top: 274px;
+
+}
+
+
+
+.texto-quien-soy-contenedor {
+	padding-left: 43%;
+	margin-top: -40px
+}
+
+.texto-quien-soy-contenedor h1 {
+	margin-bottom: 80px;
+	padding-right: 160px;
+	letter-spacing: 4px;
+
+}
+
+.texto-quien-soy-contenedor p {
+
+	width: 91%;
+	line-height: 130%;
+	font-weight: 300;
+}
+
+
+.container-toalla {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.container-pinzas {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 39px;
+}
+
+.container-pinzas .pinza-izquierda {
+
+	display: block;
+	width: 82px;
+	height: 255px;
+	background: url(../images/pinza-izquierda.png) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.container-pinzas .pinza-derecha {
+
+	display: block;
+	width: 82px;
+	height: 255px;
+	background: url(../images/pinza-derecha.png) no-repeat;
+	position: absolute;
+	right: 0%;
+	top: 0;
+	z-index: 1000;
+}
+
+.toalla {
+	position: relative;
+	background: white;
+	width: 1000px;
+	margin-top: 318px;
+	margin: 0 auto;
+	border-radius: 40px 40px 0 0;
+	padding: 40px;
+}
+
+.toalla::before {
+	content: '';
+	display: block;
+	width: 400px;
+	height: 490px;
+	background: url(../images/mano-izquierda.png);
+	position: absolute;
+	left: -275px;
+	top: 500px;
+}
+
+.toalla::after {
+	content: '';
+	display: block;
+	width: 400px;
+	height: 500px;
+	background: url(../images/mano-derecha.png);
+	position: absolute;
+	left: 878px;
+	top: 500px;
+}
+
+
+.toalla h1 {
+	padding-top: 80px;
+	font-size: 70px;
+	text-align: center;
+
+}
+
+.toalla .mama {
+	margin-left: 10px;
+}
+
+.tareas-que-realizo h1 {
+
+	text-align: center;
+	padding-bottom: 63px;
+}
+
+.fondo-verde-tareas {
+	background: #0e7c3c;
+	width: 869px;
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+.fila p {
+	padding: 55px 100px;
+	color: white;
+	font-weight: lighter;
+
+}
+
+.fila:nth-of-type(1) p {
+	margin-left: 40px;
+
+}
+
+.fila:nth-of-type(2) p {
+	margin-left: 40px;
+	width: 800px;
+}
+
+.fila:nth-of-type(3) p {
+	margin-left: 40px;
+	width: 730px;
+}
+
+.fila:nth-of-type(4) p {
+	margin-left: 40px;
+	width: 730px;
+}
+
+.fila:nth-of-type(5) p {
+	margin-left: 40px;
+	width: 730px;
+}
+
+.fila:nth-of-type(6) p {
+	margin-left: 40px;
+	padding-bottom: 90px;
+	width: 730px;
+}
+
+.fila:nth-of-type(n) {
+	padding-left: 130px;
+	line-height: 37px;
+	padding-top: 50px;
+}
+
+.fila:nth-of-type(1) {
+	background: url(../images/imagen-casa.jpg) no-repeat 80px 65px;
+	left;
+
+
+}
+
+.fila:nth-of-type(2) {
+	background: url(../images/imagen-bano.jpg) no-repeat 80px 60px;
+	left;
+}
+
+.fila:nth-of-type(3) {
+	background: url(../images/imagen-plancha.jpg) no-repeat 80px 117px;
+	left;
+}
+
+.fila:nth-of-type(4) {
+	background: url(../images/imagen-cocina.jpg) no-repeat 80px 102px;
+	left;
+}
+
+.fila:nth-of-type(5) {
+	background: url(../images/imagen-lavadoraysecadora.jpg) no-repeat 80px 80px;
+	left;
+}
+
+.fila:nth-of-type(6) {
+	background: url(../images/imagen-cama.jpg) no-repeat 80px 110px;
+	left;
+}
+
+.mapa {
+	margin-left: 7px;
+}
+
+
+.fondo-verde-flojo {
+	background: #12e065;
+	width: 1000px;
+	padding-top: 40px;
+}
+
+.fondo-verde-fuerte {
+	background: #0e7c3c;
+	width: 830px;
+}
+
+
+
+/*------------------
+PASTA
+------------------*/
+
+.pasta {
+	padding-bottom: 80px;
+	background-image: url(../images/monedas.png), url(../images/monedas2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom, right bottom;
+
+}
+
+
+.pasta p {
+	background: url(../images/fondoverdehoras.png) no-repeat right bottom;
+	width: 90%;
+	max-width: 766px;
+	font-size: 200px;
+	font-weight: bold;
+	line-height: 1.7;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+
+/*------------------
+MIS REFERENCIAS
+------------------*/
+
+.mis-referencias {
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.referencia-item {
+	margin: 80px 0px 0 0;
+	line-height: 190%;
+	font-weight: lighter;
+	background-image: url(../images/lazo-izquierdo.png), url(../images/lazo-derecho.png);
+	background-repeat: no-repeat;
+	background-position: center left, center right;
+	padding: 40px 40px 20px 40px;
+
+
+}
+
+.mis-referencias span {
+
+	text-align: justify;
+	font-weight: lighter;
+	display: block;
+	text-align: center;
+
+
+}
+
+.mis-referencias span i {
+	display: block;
+	font-style: normal;
+	line-height: 2;
+	font-weight: bold;
+
+
+}
+
+.footer {
+	height: 100%;
+
+}
+
+.Numero-de-nuevo {
+	text-align: center;
+
+}
+
+.Numero-de-nuevo p,
+.Numero-de-nuevo span {
+	color: white;
+	font-size: 50px;
+	font-family: Lobster two;
+	line-height: 1.2;
+
+}
+
+.footer .fondo-verde-flojo {
+	margin: 0 auto;
+	height: 1080px;
+	border-radius: 0 0 40px 40px;
+}
+
+.footer .formulario {
+	padding: 40px 40px 20px;
+	background: #0e7c3c;
+	border-radius: 40px;
+	margin: 0 40px 40px 40px;
+}
+
+.footer .formulario p {
+
+	background-image: url(../images/buzon.png);
+	background-repeat: no-repeat;
+	background-position: center 170px;
+
+	padding: 40px;
+	font-weight: lighter;
+	text-align: justify, left;
+	line-height: 30px;
+	min-height: 400px;
+	color: white;
+
+}
+
+.fila1::before,
+.fila1::after,
+.clear::before,
+.clear::after {
+	content: ' ';
+	display: table;
+}
+
+
+
+.caja-formulario {
+	margin: 0 auto;
+	padding-left: 170px;
+	margin-top: -40px;
+	padding-bottom: 40px;
+
+
+
+}
+
+.caja-formulario input {
+	background: white;
+	height: 50px;
+	width: 500px;
+	display: block;
+	margin-bottom: 10px;
+	font-family: Lato;
+
+}
+
+textarea {
+	background: white;
+	display: block;
+	width: 500px;
+	height: 200px;
+	margin-bottom: 10px;
+	font-family: Lato;
+	color: dimgrey;
+}
+
+#boton {
+	background: yellow;
+	font-style: normal;
+}
+
+#boton:hover {
+	background: red;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.cuerpo-azul {
+	background: url(../images/cuerpo.png);
+	width: 839px;
+	height: 186px;
+	margin: 0 auto;
+}

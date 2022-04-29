@@ -1,0 +1,363 @@
+/* EMPIEZA EL RESET -----------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*ACABA EL RESET -----------------------------------------------------------------------*/
+
+/*ESTRUCTURA GENERAL DEL SITIO*/
+
+*{box-sizing: border-box;}
+
+html{font-family: 'Open Sans', sans-serif;}
+
+body{background-color: #000000;}
+
+#contenedor-general{ margin: 0 auto; max-width: 1200px;}
+
+.centrar-texto{text-align: center;}
+
+p{font-size: 20px;}
+
+/*ESTILO BLOQUE-1*/
+
+#bloque-1{
+	position: relative;
+	min-height: 521px;
+	background-image: url(../images/Fondo1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color:white;
+}
+
+nav{position: absolute; right: 30px; top:40px;}
+
+nav ul li{display: inline-block; font-weight: bold; font-size: 0.1rem; padding: 3em;}
+
+nav ul li a{ text-decoration: none; color:white}
+
+h1{font-weight: bold; font-size: 34px;}
+
+.linea-decorativa{
+	background-color: white;
+	height: 3px;
+	width: 90px;
+	margin: 0 auto;
+}
+
+#cafe-logo img{position: absolute; left: 20px; right: 0px; top:20px;}
+
+
+
+#bloque-1 .caja-titulo-y-texto{ margin: 0 auto;
+	max-width: 600px;
+	padding-top:8em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+
+#bloque-1 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em;}
+#bloque-1 .caja-titulo-y-texto h1{ max-width: 380px; margin:0 auto; padding-bottom: 1em;}
+
+/*ESTILO BLOQUE-2*/
+
+#bloque-2 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em;}
+#bloque-2 .caja-titulo-y-texto h1{max-width: 380px; margin:0 auto;}
+
+#bloque-2{background-color:#d03b40; color: #ded6c0}
+
+#bloque-2 .caja-titulo-y-texto{ margin: 0 auto;
+	margin: 0 auto;
+    max-width: 600px;
+    padding-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 4em;
+
+}
+
+/*ESTILO BLOQUE-3*/
+
+#bloque-3 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em;}
+#bloque-3 .caja-titulo-y-texto h1{max-width: 380px; margin:0 auto;}
+
+#bloque-3{background-color:#ded6c0; color:#d03b40; } 
+
+#bloque-3 .caja-titulo-y-texto{ margin: 0 auto;
+	margin: 0 auto;
+    max-width: 600px;
+    padding-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 4em;
+}
+
+/*ESTILO-BLOQUE-4*/
+
+#bloque-4{background-image: url(../images/Fondo2.jpg); color:white;}
+
+#bloque-4 a{padding: 1.2em;
+    border: solid 4px; text-decoration: none; color:white}
+
+#bloque-4 .caja-titulo-y-texto{ margin: 0 auto;
+	max-width: 600px;
+	padding-top:5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 7.5em;
+
+}
+
+#bloque-4 a:hover{color: #d03b40; font-weight: bold;
+    border-color: #d03b40; background-color: #ded6c0;}
+
+#bloque-4 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em; padding-bottom: 4em;}
+#bloque-4 .caja-titulo-y-texto h1{ max-width: 380px; margin:0 auto; padding-bottom: 1em;}
+
+/*BLOQUES de mierda 5*/
+
+
+.padre{
+    margin:0 auto;
+    background-color: white;
+    display: flex;
+    padding:2em;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+img{width: 113px;}
+
+.caja-y-texto{margin:1em;}
+
+h1{font-size: 1em; font-weight: bold;}
+p{line-height: 1.2em; font-size: 1em;}
+
+@media only screen and (min-width: 900px) {
+    
+    .padre {
+    
+      align-content: center;
+    }
+   
+   .hijo{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    width: 50%; text-align: left;
+    }
+
+  }
+
+/*BLOQUE-9*/
+
+#bloque-9 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em;}
+#bloque-9 .caja-titulo-y-texto h1{max-width: 380px; margin:0 auto;}
+
+#bloque-9{background-color:#ded6c0; color: #d03b40;}
+
+#bloque-9 .caja-titulo-y-texto{ 
+	margin: 0 auto;
+    max-width: 600px;
+    padding-top: 3.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 4em;
+
+}
+
+#bloque-9 a{text-decoration: none; color:#d03b40; font-weight: bold;}
+
+/*BLOQUE-10*/
+
+#bloque-10 .caja-titulo-y-texto p{line-height: 1.3em; padding-top: 1.7em;}
+#bloque-10 .caja-titulo-y-texto h1{max-width: 380px; margin:0 auto;}
+
+#bloque-10{background-color:#d03b40; color:#ded6c0; } 
+
+#bloque-10 .caja-titulo-y-texto{ margin: 0 auto;
+	margin: 0 auto;
+    max-width: 600px;
+    padding-top: 3.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 4em;
+}
+
+#bloque-10 a{text-decoration: none; color:#ded6c0; font-weight: bold;}
+
+/*FOOTER*/
+
+footer{background-color: #170e02; min-height: 5em; color: white;}
+
+footer p{text-align: left; padding: 30px 40px 10px;}
+
+/*MEDIA QUERIES ESTRUCTURA*/
+
+@media screen and (min-width:910px){
+
+	#bloque-2, #bloque-3, #bloque-9, #bloque-10{width: 49%; display: table-cell;}
+	.contenedor-1, .contenedor-2{overflow: hidden;}
+	.caja-1, .caja-2{float:left; width: 50%;}
+
+}
+
+@media screen and (min-width:558px){
+
+	footer p{padding: 40px 37px 10px;}
+	
+
+}
+
+
+/* MENÚ DE NAVEGACIÓN ESCRITORIO */
+.lanzador-menu {
+	display: none;
+  }
+
+  .navegacion {
+	position: absolute;
+	top: 39px;
+	right: 20px;
+  }
+
+  .navegacion a {
+	border-bottom-style: none;
+	font-weight: Bold;
+  }
+
+  .navegacion li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+
+/* Estilos para la Navegación */
+
+.navegacion a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+
+  }
+  
+  .navegacion a:hover {
+	color: #d03b40;
+	border-color: #d03b40;
+  }
+  
+  .lanzador-menu {
+	text-decoration: none;
+	color: #fff;
+	background-color: #d03b40;
+	border-radius: 3px;
+	padding: 11px 11px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	height: 41px;
+	width: 52px;
+  }
+  
+  .lanzador-menu span {
+	display: block;
+	margin: 0 0 5px 0;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+  }
+  
+  
+  
+ /*APARECE MENÚ DE HAMBURGUESA EN FORMATO MÓBIL*/
+
+  @media screen and (max-width: 769px) {
+	.js .navegacion {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.5s;
+	  position: absolute;
+	  top: 80px;
+	  left: 0px;
+	  right: 0px;
+	  background-color: #3c3c3b;
+	}
+  
+	.js .navegacion li{display: inherit; margin:11px;}
+
+
+	.js .navegacion a {
+	  padding: 5px 10px;
+	  color: #fff;
+	 
+	}
+  
+	.js .navegacion a:hover {
+	  color: #d03b40;
+	}
+  
+	.js .navegacion.menu-desplegado {
+	  max-height: 400px;
+	}
+
+	.js .lanzador-menu {
+		display: block;
+	  }
+  }
+  
+  
+  
+  
+  
+	
+  
+  

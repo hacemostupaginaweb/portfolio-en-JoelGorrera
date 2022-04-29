@@ -1,0 +1,60 @@
+/** 
+* #RESET & FORM
+**/
+
+select[multiple],textarea{vertical-align:top}a,hr{padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0}ins{text-decoration:none}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}button,input,label,select,textarea{margin:0;border:0;padding:0;display:inline-block;vertical-align:middle;white-space:normal;background:0 0;line-height:1;font-size:19px;font-family:Arial}input:focus{outline:0}input,textarea{-webkit-box-sizing:content-box;box-sizing:content-box}button,input[type=button],input[type=checkbox],input[type=radio],input[type=reset],input[type=submit],select{-webkit-box-sizing:border-box;box-sizing:border-box}input[type=checkbox],input[type=radio]{width:13px;height:13px}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box}::-webkit-search-decoration{display:none}button,input[type=reset],input[type=button],input[type=submit]{overflow:visible;width:auto}::-webkit-file-upload-button{padding:0;border:0;background:0 0}textarea{overflow:auto}
+
+/**
+* #GLOBAL
+**/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.clear::before,
+.clear::after {
+    content: ' ';
+    display: table;
+}
+.clear::after {
+    clear: both;
+}
+.clear {
+    clear: both;
+    *zoom: 1;
+}
+
+html,
+body {
+    height: 100%;
+}
+a,
+a:hover {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+li {list-style: none;}
+
+/**
+* #MISC
+**/
+
+.break {
+    display: block;
+}
+.skip {
+    position: absolute;
+    left: -10000em;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}

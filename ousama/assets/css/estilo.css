@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;;
+}
+
+.grid-container > *{
+    
+    text-align: center;
+}
+
+
+/*PRIMERO CREAS EL GRID CON SUS ELEMENTOS Y LA ALTURA DE ESTOS*/
+
+.grid-container{
+    max-width: 1740px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    /*pones los nombres y la altura que ha de tener cada fila*/
+    grid-template: 
+    "header" 100px
+    "navbar" 350px
+    "sidebar" 
+    "main"   430px
+    "footer"  
+    "article" 
+    "article2" ;
+}
+
+/*ENLAZAS LOS ITEMS CON EL GRID CREADO*/
+
+.header{grid-area: header;}
+.navbar{grid-area: navbar;}
+.sidebar{grid-area: sidebar;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+.article{grid-area: article;}
+.article2{grid-area: article2;}
+
+/*------------------------------------------------------*/
+
+
+.navbar img{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+}
+
+.header{ background-image: url(https://lostinanime.com/wp-content/uploads/2021/10/Ousama-Ranking-01-13.jpg);
+    background-size: cover;
+    
+    position: relative;
+
+}
+
+.main{
+    background-image: url(https://pics.filmaffinity.com/osama_ranking-457561732-large.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+
+
+    
+.sidebar{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; }
+
+.sidebar p{
+    margin: 0% 10%;}
+
+
+footer{
+   
+    background-image: url(https://pbs.twimg.com/media/FC0JEC7WQAIPvBj?format=jpg&name=4096x4096);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 50px;
+  }
+
+  .personajes{display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;}
+
+
+    .footer .caja{
+        
+        height: 300px;
+        margin: 50px;
+        width: 300px;
+       opacity: 0.5;
+       transition:all 0.2s ease-in-out;
+    }
+
+    .footer h1{margin-top: 60px;}
+
+    .caja:hover{opacity: 1;}
+
+
+.sidebar{
+    background-image: url(https://pics.filmaffinity.com/osama_ranking-457561732-large.jpg);
+}
+
+.sidebar .titulo-y-texto{background-color: aliceblue; padding: 30px;}
+
+h1{color:rgba(249, 226, 12, 0.772); text-shadow: 0.1em 0.1em #333;}
+.sidebar p{color:rgb(212, 10, 10); text-shadow: 0.1em 0.1em rgba(249, 226, 12, 0.772);}
+
+
+.caja-1{ background-image: url(https://www.geekmi.news/__export/1634848004767/sites/debate/img/2021/10/21/ousama4.jpg_903948830.jpg);
+position: relative;
+background-position: -90px 0px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nombre{ position: absolute;
+    background-color: #4d7cb3;
+    top: 300px;
+    padding: 10px;
+    left: 0;
+right: 0; color:white}
+
+.caja-2{ background-image: url(https://i.pinimg.com/736x/ac/51/a1/ac51a17b7bc8e21f6c37d64e6dfc3434.jpg);
+  background-position: -17px 0px; 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caja-3{ background-image: url(https://lostinanime.com/wp-content/uploads/2021/12/Ousama-Ranking-08-35.jpg);
+  background-position: -122px 0px;
+  background-size: cover;
+  position: relative;
+    
+}
+
+.caja-4{ background-image: url(https://cdn.myanimelist.net/images/characters/13/451506.jpg);
+  background-position: 0px -30px;
+  background-size: cover;
+    position: relative;
+}
+
+.caja-5{ background-image: url(https://i0.wp.com/lamazmorradelfriki.com/wp-content/uploads/2021/12/Ranking-of-Kings-E11-Miranjo.jpeg?fit=1400%2C700&ssl=1);
+  background-position: -181px 0px;
+  background-size: cover;
+    position: relative;
+}
+
+.caja-6{ background-image: url(https://lostinanime.com/wp-content/uploads/2021/11/Ousama-Ranking-05-06.jpg);
+  background-position: -111px 0px;
+  background-size: cover;
+    position: relative; 
+    position: relative;}
+
+
+    .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+
+/* MENÚ DE NAVEGACIÓN ESCRITORIO */
+.lanzador-menu {
+	display: none;
+  }
+
+  .navegacion {
+	position: absolute;
+	top: 39px;
+	right: 20px;
+  }
+
+  .navegacion a {
+	border-bottom-style: none;
+	font-weight: Bold;
+  }
+
+  .navegacion li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+
+/* Estilos para la Navegación */
+
+.navegacion a {
+	display: block;
+	text-decoration: none;
+	color: rgba(249, 226, 12, 0.772);
+    text-shadow: 0.1em 0.1em #333;
+	text-align: center;
+
+  }
+  
+  .navegacion a:hover {
+	color: #d03b40;
+	border-color: #d03b40;
+  }
+  
+  .lanzador-menu {
+	text-decoration: none;
+	background-color: #ccba21;
+	border-radius: 3px;
+	padding: 11px 11px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	height: 41px;
+	width: 52px;
+    color: rgba(249, 226, 12, 0.772);
+    box-shadow: 0.1em 0.1em #000;
+  }
+  
+  .lanzador-menu span {
+	display: block;
+	margin: 0 0 5px 0;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+  }
+  
+  
+  
+ /*APARECE MENÚ DE HAMBURGUESA EN FORMATO MÓBIL*/
+
+  @media screen and (max-width: 769px) {
+	.js .navegacion {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.5s;
+	  position: absolute;
+	  top: 80px;
+	  left: 0px;
+	  right: 0px;
+	  background-color: #3c3c3b;
+	}
+  
+	.js .navegacion li{display: inherit; margin:11px;}
+
+
+	.js .navegacion a {
+	  padding: 5px 10px;
+	  color: #fff;
+	 
+	}
+  
+	.js .navegacion a:hover {
+	  color: #d03b40;
+	}
+  
+	.js .navegacion.menu-desplegado {
+	  max-height: 400px;
+	}
+
+	.js .lanzador-menu {
+		display: block;
+	  }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 850px){
+ 
+    .grid-container{
+    grid-template: 
+    "header header" 100px
+    "navbar navbar" 300px
+    "sidebar main"  500px 
+    "footer footer" 
+    "article article2" 500px;
+    
+    grid-template-columns: 1fr 1fr;
+
+    }
+
+    .main{background-image: url(https://pics.filmaffinity.com/osama_ranking-457561732-large.jpg);
+        background-size: cover;
+        background-position: 50% 77%;
+       
+    
+    }
+
+    .personajes{flex-direction: row; justify-content: center; padding-bottom: 50px;}
+
+    .footer .caja{width: 300px;}
+
+
+
+}
